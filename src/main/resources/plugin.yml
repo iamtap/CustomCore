@@ -1,0 +1,4 @@
+name: RPGCore
+version: '${project.version}'
+main: me.michadev.rpgcore.RPGCore
+api-version: 1.19
