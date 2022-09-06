@@ -1,5 +1,6 @@
-package me.michadev.rpgcore.customitems;
+package me.michadev.rpgcore.customitems.impl;
 
+import me.michadev.rpgcore.customitems.CustomItem;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.Sound;
@@ -9,6 +10,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.util.Vector;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class FlightStick extends CustomItem {
@@ -25,7 +27,7 @@ public class FlightStick extends CustomItem {
 
     @Override
     public List<String> getLore() {
-        return Arrays.asList("&aRight Click: &7Launch yourself through the air.");
+        return Collections.singletonList("&aRight Click: &7Launch yourself through the air.");
     }
 
     @Override
