@@ -8,8 +8,7 @@ import java.io.File;
 
 public final class Common {
 
-    private Common() {
-    }
+    private Common() {}
 
     public static Plugin getPlugin() {
         return RPGCore.getPlugin(RPGCore.class);
