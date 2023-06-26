@@ -1,6 +1,6 @@
-package me.michadev.rpgcore.customitems.impl;
+package me.michadev.customcore.customitems.impl;
 
-import me.michadev.rpgcore.customitems.CustomItem;
+import me.michadev.customcore.customitems.CustomItem;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.Sound;
@@ -9,7 +9,6 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.util.Vector;
 
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 

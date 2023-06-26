@@ -1,7 +1,7 @@
-package me.michadev.rpgcore.customitems;
+package me.michadev.customcore.customitems;
 
-import me.michadev.rpgcore.RPGCore;
-import me.michadev.rpgcore.utils.Common;
+import me.michadev.customcore.CustomCore;
+import me.michadev.customcore.utils.Common;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerInteractEvent;
@@ -27,7 +27,7 @@ public abstract class CustomItem {
 
 
     public String getId() {
-        return getClass().getSimpleName();
+        return getClass().getSimpleName().toLowerCase();
     }
 
     public ItemStack getItem() {
@@ -40,7 +40,7 @@ public abstract class CustomItem {
         getLore().forEach(l-> lore.add(Common.colorize(l)));
         itemMeta.setLore(lore);
 
-        container.set(RPGCore.rpgItemKey, PersistentDataType.STRING, getId());
+        container.set(CustomCore.rpgItemKey, PersistentDataType.STRING, getId());
         itemStack.setItemMeta(itemMeta);
         return itemStack;
     }

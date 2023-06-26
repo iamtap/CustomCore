@@ -1,4 +1,4 @@
-name: RPGCore
-version: '${project.version}'
-main: me.michadev.rpgcore.RPGCore
-api-version: 1.19
+main: me.michadev.customcore.CustomCore
+name: CustomCore
+version: 1.0.1
+api-version: 1.20
