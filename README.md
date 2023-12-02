@@ -1,31 +1,18 @@
 # CustomCore
 CustomCore is a powerful API used for creating custom items, blocks and (soon) worlds. Installing this as a standalone plugin will grant no additional features.
 
-## License
-It's my code I just want to be credited when necessary.
-
-## API Changelog
-### Version 1.0.0
- - Initial Commit
- - Implemented Custom Items
- - Implemented Custom Storage
-
-### Version 1.0.1
- - Removed Lombok Dependency
- - Updated to Spigot-API 1.20.2
- - Implemented Custom Blocks
- - Implemented Custom Inventories
-
 ### Min. Server Requirements ###
 - Running on Java 17
 - Spigot or PaperSpigot (1.20+)
 - 2GB of RAM
 
-### Getting Started ###
+### Getting Started ### 
 
-#### Custom Items ####
-#### 1. How to create a custom item ####
-The first step to creating a custom item is to extends the CustomItem class.
+#### Creating Custom Items ####
+The first step to creating a custom item is to extends the CustomItem class. Each item has it's own
+ID based on the class name. 
+<br/>
+If my class name is FlightStick the ID will be "flightstick". You can not register anytwo items with the same ID or class name.
 
 ```java
   public class ShadowSword extends CustomItem {
@@ -57,8 +44,10 @@ The first step to creating a custom item is to extends the CustomItem class.
     }
 }
 ```
+<br/>
 
-After defining your custom item you need to register it in order to retrieve it later.
+After defining your custom item you need to register it in order to retrieve it later. <br/>
+You can do this by calling the CustomCore.registerItems() method in your onEnable method.
 
 ```java
     @Override
@@ -66,3 +55,16 @@ After defining your custom item you need to register it in order to retrieve it 
         registerItems(new FlightStick());
     }
 ```
+<br/>
+
+Retrieving your custom item is a little different. In order to retrieve your item you need to
+access the item map using the items ID. In this case my class name is "ShadowSword" so the ID of the item is "shadowsword" all lower case.
+
+```java
+ ItemStack shadowSword = CustomCore.customItemMap.get("shadowsword").getItem();
+
+// Your logic here. (ie: give to player or add to GUI)
+```
+
+#### Creating Custom Blocks ####
+Docs are to be written...
