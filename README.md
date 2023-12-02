@@ -1,12 +1,23 @@
-# CustomCore
-CustomCore is a powerful API used for creating custom items, blocks and (soon) worlds. Installing this as a standalone plugin will grant no additional features.
+# CustomCraft API
+CustomCraftAPI allows developers to create addon packs similar to mods without requiring the player to download any addition software. 
+<br/>
+<br/>
+
+### Quick Links
+- Server Requirements
+- Custom Items
+- Custom Blocks
+- Custom Inventories
+
+
 
 ### Min. Server Requirements ###
 - Running on Java 17
-- Spigot or PaperSpigot (1.20+)
-- 2GB of RAM
+- Spigot or PaperSpigot
+  - Version 1.20.2
+- Minimum of 2GB of RAM
 
-### Getting Started ### 
+
 
 #### Creating Custom Items ####
 The first step to creating a custom item is to extends the CustomItem class. Each item has it's own
@@ -66,5 +77,14 @@ access the item map using the items ID. In this case my class name is "ShadowSwo
 // Your logic here. (ie: give to player or add to GUI)
 ```
 
+<br/>
+
 #### Creating Custom Blocks ####
 Docs are to be written...
+
+<br/>
+
+#### Creating Custom Inventories ####
+Docs are to be written.
+
+<br/>
