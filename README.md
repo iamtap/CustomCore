@@ -1,7 +1,17 @@
 # CustomCraft API
-CustomCraftAPI allows developers to create addon packs similar to mods without requiring the player to download any addition software. 
+CustomCraftAPI empowers developers to create server addon packs that match the immersive experience of mods, bringing lightweight and efficient features to Minecraft, such as custom blocks, items, and GUIs— all without requiring players to download any additional software. 
 <br/>
 <br/>
+If you want to know more about the development process check out my channel where it was made! (https://www.youtube.com/@michaelfoulk)
+<br/>
+<br/>
+<b>
+Installing this plugin on your Minecraft server standalone will grant no additional. Either implement the code into your codebase or use install as a plugin to use as an external library.
+If you find any problems you can contact me on Discord or report an issue here on GitHub.
+<b/>
+<br/>
+
+<b>Documentation is still being written. Thank you for being patient.<b/>
 
 ### Quick Links
 - Server Requirements
