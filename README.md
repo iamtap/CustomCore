@@ -73,7 +73,7 @@ You can do this by calling the CustomCore.registerItems() method in your onEnabl
 ```java
     @Override
     public void onEnable() {
-        registerItems(new FlightStick());
+        registerItems(new ShadowSword());
     }
 ```
 <br/>

@@ -5,7 +5,7 @@ import me.michadev.customcore.customblocks.CustomBlockHandler;
 import me.michadev.customcore.custominventory.CustomInventoryHandler;
 import me.michadev.customcore.customitems.CustomItem;
 import me.michadev.customcore.customitems.CustomItemHandler;
-import me.michadev.customcore.customitems.impl.FlightStick;
+import me.michadev.customcore.customitems.example.FlightStick;
 import org.bukkit.Bukkit;
 import org.bukkit.NamespacedKey;
 import org.bukkit.event.Listener;
@@ -22,6 +22,10 @@ public final class CustomCore extends JavaPlugin {
 
     public static Map<String, CustomItem> customItemMap;
     public static CustomBlockHandler blockHandler;
+
+    public CustomItem getCustomItem(String itemID) {
+        return CustomCore.customItemMap.get(itemID.toLowerCase());
+    }
 
     @Override
     public void onEnable() {

@@ -15,13 +15,15 @@ public class CustomItemHandler implements Listener {
 
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
-        event.getPlayer().getInventory().addItem(CustomCore.customItemMap.get("FlightStick").getItem());
+        event.getPlayer().getInventory().addItem(CustomCore.customItemMap.get("flightstick").getItem());
     }
 
     @EventHandler(priority = EventPriority.MONITOR)
     public void onPlayerInteract(PlayerInteractEvent event) {
         Player player = event.getPlayer();
         ItemStack heldItem = player.getInventory().getItemInMainHand();
+
+        if (heldItem == null) return;
 
         if (event.getAction().equals(Action.RIGHT_CLICK_BLOCK) || event.getAction().equals(Action.RIGHT_CLICK_AIR) && isCustomItem(heldItem)) {
             CustomItem customItem = CustomCore.customItemMap.get(getItemId(heldItem));

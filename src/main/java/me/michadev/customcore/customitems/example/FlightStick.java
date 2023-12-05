@@ -1,4 +1,4 @@
-package me.michadev.customcore.customitems.impl;
+package me.michadev.customcore.customitems.example;
 
 import me.michadev.customcore.customitems.CustomItem;
 import org.bukkit.Location;
